@@ -1,0 +1,77 @@
+.formulario{
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-family: var(--regular);
+    width: 100%;
+    min-width: 400px;
+}
+.formulario h2{
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+    font-family: var(--regular);
+    display: flex;
+    justify-content: center;
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.field label, 
+.field span{
+    padding-left: 5px;
+    font-size: 1.1em;
+    color: var(--cor-branco);
+    font-family: var(--regular);
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-principal);
+    outline: none;
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    font-family: var(--bold);
+    display: block;
+    background-color: var(--cor-principal);
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+input[type=submit]:hover {
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    border: 2px solid var(--cor-principal);
+    scale: 1.1;
+}
+
+@media screen and (max-width: 1200px) {
+    .formulario{
+        margin: 30px 0;
+        padding: 20px 20px;
+        min-width: 340px;
+    }
+}

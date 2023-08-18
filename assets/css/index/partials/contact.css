@@ -1,0 +1,118 @@
+section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 100px;
+    margin: 30px 0 0 0;
+}
+section.contact .mycontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+section.contact .mycontact h2 {
+    font-family: var(--bold);
+    font-size: 2rem;
+    color: var(--cor-branco);
+    position: relative;
+    display: inline-block;
+    margin-block: 10px 5px;
+}
+
+section.contact .mycontact h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
+}
+section.contact  .itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 40px 30px;
+}
+section.contact .itens .itens-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+section.contact .itens .itens-contact a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+}
+section.contact .itens .itens-contact:hover {
+    scale:1.2;
+}
+section.contact .itens .itens-contact svg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    max-height: 100px;
+    border-radius: 50%;
+    background-color: #28283260;
+    padding: 10px;
+}
+section.contact .itens .itens-contact h3{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    font-family: var(--bold);
+    font-size: 1rem;
+    color: var(--cor-branco);
+}
+section.contact .itens .itens-contact p{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    font-family: var(--regular);
+    font-size: 0.8rem;
+    color: var(--cor-branco);
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 700px) {
+    section.contact {
+        padding: 40px;
+    }
+    section.contact  .itens {
+        flex-direction: column;
+    }
+    section.contact .itens .itens-contact {
+        margin-top: 30px;
+    }
+}

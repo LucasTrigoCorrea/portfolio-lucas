@@ -1,0 +1,117 @@
+/* <section class="apresentacao"/> */
+section.home {
+    display: flex;
+    justify-content: center;
+    padding: 140px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--cor-fundo);
+    margin: 0;
+  }
+  /* Imagem */
+  section.home .imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    z-index: 2;
+  }
+  section.home .imagem img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+  }
+  /* Circulo */
+  section.home .imagem .animation-1 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 10px solid var(--cor-principal);
+    border-top: 10px solid var(--cor-fundo);
+    box-shadow: 0 2px 20px 2px var(--cor-principal);
+    animation: animation-1 5s linear infinite;
+    z-index: 1;
+  }
+  /* Animações */
+@keyframes animation-1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+  /* Texto */
+  section.home .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+  }
+  section.home .texto h1 {
+    font-family: var(--bold);
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--cor-branco);
+    width: 100%;
+    max-width: 600px;
+  }
+  section.home .texto h1 span {
+    color: var(--cor-principal);
+  }
+  section.home .texto p {
+    font-family: var(--regular);
+    font-size: 1rem;
+    color: var(--cor-branco);
+    line-height: 1.5;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    max-width: 500px;
+    line-height: 1.5;
+  }
+  section.home .texto button {
+    font-family: var(--bold);
+    font-size: 1.2rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    box-shadow: 0 1px 10px 1px var(--cor-principal);
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  section.home .texto button:hover {
+    color: var(--cor-fundo);
+    background-color: var(--cor-principal);
+    box-shadow: 0 10px 20px 0 var(--cor-principal);
+  }
+  /* Responsivo */
+  @media screen and (max-width: 700px) {
+    section.home {
+      flex-direction: column;
+      padding: 100px 30px 50px 30px;
+    }
+    /* Imagem */
+    section.home .imagem {
+      margin: 50px 0 0 0;
+      width: 100%;
+    }
+    section.home .imagem img {
+      width: 100%;
+      max-width: 250px;
+    }
+    section.home .imagem .animation-1 {
+        width: 300px;
+        height: 300px;
+    }
+    /* Texto */
+    section.home .texto {
+      width: 100%;
+    }
+    section.home .texto h1 {
+      font-size: 2rem;
+    }
+  }
+  

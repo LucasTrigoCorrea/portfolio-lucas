@@ -1,0 +1,14 @@
+/* Index */
+@import '../global/global.css';
+/* Partials */
+@import './partials/loading.css';
+@import './partials/nav.css';
+@import './partials/footer.css';
+@import './partials/light-mode.css';
+@import './partials/section-home.css';
+@import './partials/section-about.css';
+@import './partials/section-skills.css';
+@import './partials/section-projects.css';
+@import './partials/contact.css';
+@import './partials/forms.css';
+@import './partials/thankyou.css';
