@@ -129,8 +129,11 @@ body.light-mode section.contact .itens .itens-contact p{
     }
     section.contact  .itens {
         flex-direction: column;
+        padding: 20px;
+        margin-top: 0;
     }
     section.contact .itens .itens-contact {
-        margin-top: 30px;
+        margin-top: 15px;
     }
+    
 }

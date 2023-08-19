@@ -1,0 +1,32 @@
+
+/* <div class="faixa"> */
+section.faixa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--cor-principal);
+  padding: 10px 0;
+}
+section.faixa a {
+  font-family: var(--bold);
+  font-size: 0.9rem;
+  color: var(--cor-branco);
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 1px solid var(--cor-branco);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+section.faixa a:hover {
+  scale: 1.1;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.418);
+}
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+
+}

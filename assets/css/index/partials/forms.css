@@ -13,6 +13,7 @@
     font-family: var(--regular);
     display: flex;
     justify-content: center;
+    padding: 20px 0 0 0;
 }
 body.light-mode .formulario h2 {
     color: var(--cor-fundo);
@@ -29,6 +30,7 @@ body.light-mode .formulario h2 {
     font-family: var(--regular);
     display: block;
     width: 100%;
+    margin-bottom: 5px;
 }
 body.light-mode .field label, 
 .field span{
@@ -47,8 +49,15 @@ textarea{
     border: 1px solid var(--cor-principal);
     outline: none;
     background-color: transparent;
+    color: var(--cor-branco);
 }
-
+body.light-mode
+input[type=text],
+input[type=email],
+input[type=number],
+textarea{
+    color: var(--cor-fundo);
+}
 
 textarea{
     line-height: 20px;

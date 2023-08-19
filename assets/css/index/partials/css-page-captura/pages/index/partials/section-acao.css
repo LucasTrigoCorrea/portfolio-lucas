@@ -1,0 +1,253 @@
+/* <section class="apresentacao"> */
+section.acao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* <div class="efeito"> */
+section.acao .efeito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  bottom: -600px;
+  z-index: 1;
+}
+/* <div class="circulo"> */
+section.acao .efeito .circulo {
+  position: absolute;
+}
+/* <div class="circulo um"> */
+section.acao .efeito .circulo.um {
+  width: 600px;
+  height: 600px;
+  border: 20px solid var(--cor-secundaria);
+  border-top: 5px solid var(--cor-secundaria);
+  border-bottom: 5px solid var(--cor-secundaria);
+  border-radius: 50%;
+  animation: girandocirculo 10s linear infinite;
+}
+/* <div class="circulo dois"> */
+section.acao .efeito .circulo.dois {
+  width: 500px;
+  height: 500px;
+  border: 10px solid var(--cor-principal);
+  border-top: 3px solid var(--cor-principal);
+  border-bottom: 3px solid var(--cor-principal);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: girandocirculo 5s linear infinite;
+}
+/* <div class="circulo tres"> */
+section.acao .efeito .circulo.tres {
+  width: 400px;
+  height: 400px;
+  border: 4px solid var(--cor-secundaria);
+  border-top: 1px solid var(--cor-secundaria);
+  border-bottom: 1px solid var(--cor-secundaria);
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: girandocirculo 2s linear infinite;
+}
+/* Animação do circulo girando */
+@keyframes girandocirculo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* <div class="blush"> */
+section.acao .efeito .blush {
+  width: 1400px;
+  height: 1400px;
+  background: radial-gradient(var(--cor-secundaria) 0%, transparent 50%);
+  background: -webkit-radial-gradient(var(--cor-secundaria) 0%, transparent 50%);
+  opacity: 0.5;
+  position: absolute;
+  border-radius: 50%;
+  animation: opacidadeblush 2s linear infinite;
+}
+/* Animação do blush com opacidade */
+@keyframes opacidadeblush {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+/* <div class="captura"> */
+section.acao .captura {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  width: 100%;
+  z-index: 2;
+}
+/* <div class="titulo"> */
+section.acao .captura .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 0 20px 0;
+}
+section.acao .captura .titulo h2 {
+  font-family: var(--bold);
+  font-size: 1.5rem;
+  color: var(--cor-branco);
+  letter-spacing: 10px;
+  margin: 0 0 5px 0;
+}
+section.acao .captura .titulo p {
+  font-family: var(--regular);
+  font-size: 1rem;
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+/* <form> */
+section.acao .captura form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 3;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+section.acao .captura form label {
+  font-family: var(--bold);
+  font-size: 0.7rem;
+  color: var(--cor-branco);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 5px 5px 20px;
+  border-radius: 10px 10px 0 0;
+}
+/* <div class="input"> */
+section.acao .captura form .input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+section.acao .captura form .input input {
+  font-family: var(--regular);
+  font-size: 1rem;
+  color: var(--cor-branco);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px 20px 20px 55px;
+  border-radius: 0 0 10px 10px;
+  transition: all 0.3s;
+}
+section.acao .captura form .input input::placeholder {
+  opacity: 0.5;
+  color: var(--cor-branco);
+}
+section.acao .captura form .input input:focus {
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+section.acao .captura form .input img {
+  width: 100%;
+  max-width: 25px;
+  position: absolute;
+  left: 20px;
+  pointer-events: none;
+  background-color: var(--cor-principal);
+  border-radius: 50%;
+}
+/* <button> do formulário */
+section.acao .captura form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: var(--cor-secundaria);
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+section.acao .captura form button:hover {
+  background-color: var(--cor-escuro);
+}
+section.acao .captura form button:hover .faixa {
+  background-color: var(--cor-secundaria);
+}
+section.acao .captura form button .faixa {
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  background-color: var(--cor-escuro);
+  animation: rodandofaixa 10s linear infinite;
+  z-index: 1;
+  transition: all 0.3s;
+}
+/* Animação que gira a faixa do botão do formulário */
+@keyframes rodandofaixa {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+section.acao .captura form button .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 20px 10px;
+  border-radius: 10px;
+  z-index: 2;
+}
+section.acao .captura form button .texto h3 {
+  font-family: var(--bold);
+  font-size: 1rem;
+  color: var(--cor-branco);
+  letter-spacing: 5px;
+}
+section.acao .captura form button .texto p {
+  font-family: var(--regular);
+  font-size: 0.8rem;
+  color: var(--cor-branco);
+  opacity: 0.8;
+}
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  /* <section class="apresentacao"> */
+  section.acao {
+    flex-direction: column-reverse;
+  }
+  /* <form> */
+  section.acao .captura form {
+    padding: 20px;
+  }
+}
