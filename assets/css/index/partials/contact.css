@@ -1,3 +1,6 @@
+body.light-mode body {
+    background-color: var(--cor-branco);
+  }
 section.contact {
     display: flex;
     flex-direction: column;
@@ -7,7 +10,9 @@ section.contact {
     width: 100%;
     max-width: 100%;
     padding: 40px 100px;
-    margin: 30px 0 0 0;
+}
+body.light-mode section.contact {
+    background-color: var(--cor-branco);
 }
 section.contact .mycontact {
     display: flex;
@@ -25,6 +30,9 @@ section.contact .mycontact h2 {
     position: relative;
     display: inline-block;
     margin-block: 10px 5px;
+}
+body.light-mode section.contact .mycontact h2 {
+    color: var(--cor-fundo);
 }
 
 section.contact .mycontact h2::after {
@@ -45,6 +53,7 @@ section.contact  .itens {
     text-align: center;
     width: 100%;
     padding: 40px 30px;
+    margin-top: 20px;
 }
 section.contact .itens .itens-contact{
     display: flex;
@@ -77,9 +86,12 @@ section.contact .itens .itens-contact svg{
     max-width: 100px;
     height: 100%;
     max-height: 100px;
-    border-radius: 50%;
+    border-radius: 20px 0 20px 0;
     background-color: #28283260;
     padding: 10px;
+}
+body.light-mode section.contact .itens .itens-contact svg{
+    background-color: #13131f11;
 }
 section.contact .itens .itens-contact h3{ 
     display: flex;
@@ -92,6 +104,9 @@ section.contact .itens .itens-contact h3{
     font-size: 1rem;
     color: var(--cor-branco);
 }
+body.light-mode section.contact .itens .itens-contact h3{
+    color: var(--cor-fundo);
+}
 section.contact .itens .itens-contact p{ 
     display: flex;
     flex-direction: column;
@@ -103,6 +118,9 @@ section.contact .itens .itens-contact p{
     font-size: 0.8rem;
     color: var(--cor-branco);
     opacity: 0.7;
+}
+body.light-mode section.contact .itens .itens-contact p{ 
+    color: var(--cor-fundo);
 }
 
 @media screen and (max-width: 700px) {

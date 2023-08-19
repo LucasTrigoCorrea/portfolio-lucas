@@ -1,3 +1,6 @@
+body.light-mode body {
+    background-color: var(--cor-branco);
+  }
 section.skills {
     display: flex;
     flex-direction: column;
@@ -8,6 +11,9 @@ section.skills {
     max-width: 100%;
     padding: 40px 40px;
 }
+body.light-mode section.skills {
+    background-color: var(--cor-branco);
+} 
 section.skills .myskills {
     display: flex;
     flex-direction: column;
@@ -24,6 +30,9 @@ section.skills .myskills h2 {
     position: relative;
     display: inline-block;
     margin-block: 10px 5px;
+}
+body.light-mode section.skills .myskills h2 {
+    color: var(--cor-fundo);
 }
 
 section.skills .myskills h2::after {
@@ -54,7 +63,7 @@ section.skills .myskills .cardsSvg svg {
 section.skills .myskills .cardsSvg svg:hover {
     scale: 1.2;
 } 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
     section.skills{
         padding: 40px 30px;
 

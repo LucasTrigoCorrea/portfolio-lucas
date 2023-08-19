@@ -1,3 +1,6 @@
+body.light-mode body {
+  background-color: var(--cor-branco);
+}
 /* <nav> */
 nav {
     display: flex;
@@ -14,6 +17,9 @@ nav {
     padding: 0 100px;
     z-index: 10;
     transition: all 0.3s;
+  }
+  body.light-mode nav {
+    background-color: var(--cor-branco);
   }
   nav {
     border-bottom: 2px solid var(--cor-principal);
@@ -39,6 +45,9 @@ nav {
     margin: 0 0 0 30px;
     transition: all 0.3s;
   }
+  body.light-mode  nav .opcoes a {
+    color: var(--cor-fundo);
+  } 
   nav .opcoes a:hover {
     color: var(--cor-principal);
   }
@@ -123,6 +132,9 @@ nav {
       pointer-events: none;
       transition: all 0.3s;
     }
+      body.light-mode     nav .opcoes {
+        background-color: var(--cor-branco);
+      }
     nav .opcoes.mostrar {
       opacity: 1;
       visibility: visible;

@@ -20,6 +20,9 @@
   .toggle input:checked+.label {
     background-color: var(--cor-branco);
   }
+  body.light-mode   .toggle input:checked+.label {
+    border: 1px solid var(--cor-principal);
+  }
   
   .toggle .label {
     display: flex;

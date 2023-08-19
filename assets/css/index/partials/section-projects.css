@@ -1,4 +1,7 @@
-section.portfolio {
+body.light-mode body {
+    background-color: var(--cor-branco);
+  }
+section.projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,13 +11,16 @@ section.portfolio {
     max-width: 100%;
     padding: 50px 40px;
 }
-section.portfolio h3{
+body.light-mode section.projects {
+    background-color: var(--cor-branco);
+}
+section.projects h3{
     color: var(--cor-principal);
     font-size: 2rem;
     font-family: var(--bold);
 
 }
-section.portfolio .projects {
+section.projects .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +28,9 @@ section.portfolio .projects {
     background-color: var(--cor-fundo);
     width: 100%;
     max-width: 100%;
+}
+body.light-mode section.projects .projects {
+    background-color: var(--cor-branco);
 }
 section.projects .myprojects {
     display: flex;
@@ -41,6 +50,9 @@ section.projects .myprojects h3 {
     position: relative;
     display: inline-block;
     margin-block: 10px 5px;
+}
+body.light-mode section.projects .myprojects h3 {
+    color: var(--cor-fundo);
 }
 
 section.projects .myprojects h3::after {
@@ -69,7 +81,7 @@ section.projects .myprojects .cards-projects .box {
     align-items: center;
     margin: 70px 0 0 0;
     transition: all 0.3s;
-    min-width: 30%
+    min-width: 30%;
 }
 section.projects .myprojects .cards-projects .box a .bg {
     position: absolute;
@@ -90,11 +102,40 @@ section.projects .myprojects .cards-projects .box  a img {
     width: 100%;
     max-width: 300px;
     height: 300px;
+    border: 1px solid var(--cor-fundo);
+    border-bottom: 0 solid transparent;
     z-index: 5;
+}
+body.light-mode section.projects .myprojects .cards-projects .box  a img {
+    border: var(--cor-branco);
 }
 
 section.projects .myprojects .cards-projects .box a:hover {
     transform: scale(1.2);
-    box-shadow: 2px 2px 10px 2px var(--cor-principal);
+    box-shadow: 2px 2px 15px 2px var(--cor-principal);
+    z-index: 3;
 }
 
+@media screen and (max-width: 1100px) {
+    section.projects .myprojects .cards-projects {
+        gap: 15px;
+    }
+    section.projects .myprojects .cards-projects .box {
+        margin: 30px 0 0 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    section.projects .myprojects .cards-projects {
+        gap: 10px;
+    }
+    section.projects .myprojects .cards-projects .box a .bg {
+        max-width: 250px;
+        height: 8px;
+        
+    }
+    section.projects .myprojects .cards-projects .box  a img {
+        max-width: 250px;
+        height: 250px;
+        max-height: 250px;
+    }
+}

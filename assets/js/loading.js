@@ -7,5 +7,5 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     body.classList.remove('carregando')
     loading.classList.add('ocultar')
-  }, 1000) // Quantidade de segundos que ele ficará depois do conteúdo carregar 1000 = 1 segundo
+  }, 2500) // Quantidade de segundos que ele ficará depois do conteúdo carregar 2500 = 2.5 segundos
 })
