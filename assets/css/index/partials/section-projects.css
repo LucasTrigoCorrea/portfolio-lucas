@@ -125,18 +125,21 @@ section.projects .myprojects .cards-projects .box a:hover {
     }
 }
 @media screen and (max-width: 700px) {
+    section.projects{
+        padding: 40px 10px;
+    }
     section.projects .myprojects .cards-projects {
         gap: 10px;
     }
     section.projects .myprojects .cards-projects .box a .bg {
-        max-width: 250px;
+        max-width: 150px;
         height: 8px;
         
     }
     section.projects .myprojects .cards-projects .box  a img {
-        max-width: 250px;
-        height: 250px;
-        max-height: 250px;
+        max-width: 150px;
+        height: 150px;
+        max-height: 150px;
     }
     
 }

@@ -122,10 +122,20 @@ section.contact .itens .itens-contact p{
 body.light-mode section.contact .itens .itens-contact p{ 
     color: var(--cor-fundo);
 }
+.align-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+    gap: 80px;
+}
 
 @media screen and (max-width: 700px) {
     section.contact {
-        padding: 40px;
+        padding: 40px 20px;
     }
     section.contact  .itens {
         flex-direction: column;
@@ -134,6 +144,16 @@ body.light-mode section.contact .itens .itens-contact p{
     }
     section.contact .itens .itens-contact {
         margin-top: 15px;
+        scale: 0.9;
+    }
+    .align-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:0;
+        margin: 0;
+        padding: 0;
     }
     
 }
