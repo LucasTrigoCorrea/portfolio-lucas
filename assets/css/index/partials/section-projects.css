@@ -9,7 +9,7 @@ section.projects {
     background-color: var(--cor-fundo);
     width: 100%;
     max-width: 100%;
-    padding: 50px 40px;
+    padding: 50px 20px;
 }
 body.light-mode section.projects {
     background-color: var(--cor-branco);
@@ -133,7 +133,7 @@ section.projects .myprojects .cards-projects .box a:hover {
     }
     section.projects .myprojects .cards-projects .box a .bg {
         max-width: 150px;
-        height: 8px;
+        height: 6px;
         
     }
     section.projects .myprojects .cards-projects .box  a img {
