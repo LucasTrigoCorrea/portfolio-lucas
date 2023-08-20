@@ -121,3 +121,9 @@ a:hover {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
+  /* Responsivo */
+  @media screen and (max-width: 900px) {
+    body{
+      padding: 40px;
+    }
+  }

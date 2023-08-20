@@ -86,3 +86,9 @@ a:hover {
   color: var(--cor-claro);
 }
 
+  /* Responsivo */
+  @media screen and (max-width: 900px) {
+    body{
+      padding: 40px;
+    }
+  }

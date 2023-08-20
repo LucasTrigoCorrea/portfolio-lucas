@@ -9,7 +9,7 @@ footer {
     width: 100%;
     padding: 30px;
     background-color: var(--cor-fundo);
-    border-top: 2px solid var(--cor-principal);
+    border-top: 1px solid var(--cor-principal);
 }
 body.light-mode footer{
     background-color: var(--cor-branco);

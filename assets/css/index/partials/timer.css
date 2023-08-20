@@ -86,6 +86,12 @@ a:hover {
 
 /* Responsivo */
 @media screen and (max-width: 1000px) {
+  body{
+        padding: 40px;
+  }
+  button {
+    width: 60px;
+  }
   .container{
       padding: 15px 30px;
   }
