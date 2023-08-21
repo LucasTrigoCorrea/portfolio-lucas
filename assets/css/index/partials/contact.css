@@ -133,7 +133,7 @@ body.light-mode section.contact .itens .itens-contact p{
     gap: 80px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
     section.contact {
         padding: 40px 20px;
     }
