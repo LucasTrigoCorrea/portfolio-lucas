@@ -138,7 +138,7 @@ section.projects .myprojects h3::after {
     margin: 0;
     width: 100%;
     height: auto;
-    padding: 1.5em 1.5em 2em;
+    padding: 2rem;
     background: rgba(0, 0, 0, 0.326);
     -webkit-background: rgba(0, 0, 0, 0.326);
     backdrop-filter: blur(16px) saturate(120%);
@@ -165,7 +165,7 @@ section.projects .myprojects h3::after {
     opacity: .6;
 }
 .details span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: var(--regular);
     color: var(--cor-branco);
     border-radius: 10px;
@@ -173,6 +173,7 @@ section.projects .myprojects h3::after {
     border: 1px solid var(--cor-branco);
     margin: 1rem 0 0 0;
     transition: all 0.3s;
+    letter-spacing: 1px;
 }
 .details span:hover {
     box-shadow: 2px 2px 15px 2px #ffffff6b;
@@ -224,7 +225,7 @@ section.projects .myprojects h3::after {
         line-height: 1;
         margin-bottom: 0.7rem;
         font-family: var(--regular);
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     
 }
@@ -241,6 +242,7 @@ section.projects .myprojects h3::after {
     bottom: -300%;
     width: 100%;
     height: auto;
+    padding: 0.8rem;
 }
 .card button {
     color: var(--cor-principal);
@@ -282,85 +284,6 @@ body.light-mode .wrapper button {
     line-height: 1;
     margin-bottom: 0.7rem;
     font-family: var(--regular);
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 }
-
-
-/* section.projects .myprojects .cards-projects {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-section.projects .myprojects .cards-projects .box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 70px 0 0 0;
-    transition: all 0.3s;
-    min-width: 30%;
-}
-section.projects .myprojects .cards-projects .box a .bg {
-    position: absolute;
-    width: 100%;
-    max-width: 300px;
-    height: 8px;
-    background-image: linear-gradient(90deg, #8257E6 0%, #A40EE4 92.32%);
-    z-index: 1;
-    border-radius: 0 0 2px 2px;
-    
-}
-
-section.projects .myprojects .cards-projects .box  a img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 300px;
-    height: 300px;
-    border: 1px solid var(--cor-fundo);
-    border-bottom: 0 solid transparent;
-    z-index: 5;
-}
-body.light-mode section.projects .myprojects .cards-projects .box  a img {
-    border: var(--cor-branco);
-}
-
-section.projects .myprojects .cards-projects .box a:hover {
-    transform: scale(1.2);
-    box-shadow: 2px 2px 15px 2px var(--cor-principal);
-    z-index: 3;
-}
-
-@media screen and (max-width: 1100px) {
-    section.projects .myprojects .cards-projects {
-        gap: 15px;
-    }
-    section.projects .myprojects .cards-projects .box {
-        margin: 30px 0 0 0;
-    }
-}
-@media screen and (max-width: 700px) {
-    section.projects{
-        padding: 40px 10px;
-    }
-    section.projects .myprojects .cards-projects {
-        gap: 10px;
-    }
-    section.projects .myprojects .cards-projects .box a .bg {
-        max-width: 150px;
-        height: 6px;
-        
-    }
-    section.projects .myprojects .cards-projects .box  a img {
-        max-width: 150px;
-        height: 150px;
-        max-height: 150px;
-    }
-    
-} */
