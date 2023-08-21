@@ -82,13 +82,12 @@ section.projects .myprojects h3::after {
     position: relative;
     width: 325px;
     height: 450px;
-    background: #000;
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
 }
 .card:hover{
-    box-shadow: 2px 2px 15px 2px rgba(78, 78, 78, 0.552);
+    box-shadow: 2px 2px 15px 2px #ffffff3f;
 }
 
 .poster {
@@ -134,11 +133,11 @@ section.projects .myprojects h3::after {
 .details {
     position: absolute;
     bottom: -100%;
-    left: 0;
+    margin: 0;
     width: 100%;
     height: auto;
     padding: 1.5em 1.5em 2em;
-    background: #000a;
+    background: rgba(0, 0, 0, 0.719);
     backdrop-filter: blur(16px) saturate(120%);
     transition: all 0.3s;
     color: var(--cor-branco);
@@ -161,6 +160,20 @@ section.projects .myprojects h3::after {
     margin-bottom: 10px;
     opacity: .6;
 }
+.details span {
+    font-size: 0.7rem;
+    font-family: var(--regular);
+    color: var(--cor-branco);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid var(--cor-branco);
+    margin: 1rem 0 0 0;
+    transition: all 0.3s;
+}
+.details span:hover {
+    box-shadow: 2px 2px 15px 2px #ffffff6b;
+    letter-spacing: 2px;
+}
 
 .details .desc {
     color: var(--cor-branco);
@@ -171,12 +184,15 @@ section.projects .myprojects h3::after {
     font-size: 0.9rem;
 }
 
-.wrapper button .mostrar {
+.card button .mostrar {
     display: none;
 }
-.wrapper button {
+.card button {
     display: none;
   }
+.card button img {
+    display: none;
+}
 
 /*RESPONSIVO*/
 @media screen and (max-width: 1100px){
@@ -195,12 +211,15 @@ section.projects .myprojects h3::after {
     .details h2 {
         display: none;
     }
+    .details span {
+        font-size: 0.5rem;
+    }
     
     .details .desc {
         color: var(--cor-branco);
         opacity: .8;
         line-height: 1;
-        margin-bottom: 2px;
+        margin-bottom: 0.7rem;
         font-family: var(--regular);
         font-size: 0.6rem;
     }
@@ -217,11 +236,10 @@ section.projects .myprojects h3::after {
     .details {
     position: absolute;
     bottom: -300%;
-    left: 0;
     width: 100%;
     height: auto;
 }
-.wrapper button {
+.card button {
     color: var(--cor-principal);
     font-family: var(--bold);
     display: flex;
@@ -230,11 +248,30 @@ section.projects .myprojects h3::after {
     justify-content: flex-end;
     bottom: 0;
     overflow: hidden;
-    background-color: var(--cor-branco);
+    background-color: var(--cor-fundo);
     width: 100%;
     max-width: 100%;
     padding: 10px 20px;
     z-index: 5;
+}
+body.light-mode .wrapper button {
+    background-color: var(--cor-branco);
+}
+.card button img {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    width: 100%;
+    max-width: 15px;
+    height: 10px;
+}
+.details .desc {
+    color: var(--cor-branco);
+    opacity: .8;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+    font-family: var(--regular);
+    font-size: 0.6rem;
 }
 }
 
