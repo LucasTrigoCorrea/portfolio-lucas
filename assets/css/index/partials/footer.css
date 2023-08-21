@@ -3,13 +3,16 @@ body.light-mode body {
   }
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 30px;
     background-color: var(--cor-fundo);
-    border-top: 1px solid var(--cor-principal);
+}
+footer .line{
+    background: linear-gradient(0deg, var(--cor-principal), var(--cor-secundaria));
+    width: 100%;
+    height: 2px;
 }
 body.light-mode footer{
     background-color: var(--cor-branco);
@@ -24,6 +27,7 @@ footer .copyright p {
     color: var(--cor-principal);
     font-size: 1rem;
     font-family: var(--regular);
+    padding: 20px 30px;
 }
 footer .copyright p span{
     display: flex;
@@ -39,9 +43,6 @@ body.light-mode footer .copyright p span{
     color: var(--cor-fundo);
 }
 @media screen and (max-width: 700px) {
-    footer {
-        padding: 30px 20px;
-    }
     footer .copyright p {
         font-size: 0.9rem;
     }

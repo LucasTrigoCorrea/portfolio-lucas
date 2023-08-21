@@ -93,17 +93,16 @@ section.home {
     font-family: var(--bold);
     font-size: 1.2rem;
     color: var(--cor-branco);
-    background-color: var(--cor-principal);
-    border: 1px solid var(--cor-principal);
+    background: linear-gradient(90deg, var(--cor-principal), var(--cor-principal), var(--cor-secundaria));
     box-shadow: 0 1px 10px 1px var(--cor-principal);
     padding: 15px 30px;
     border-radius: 10px;
-    transition: all 0.3s;
+    transition: all 0.8s;
   }
   section.home .texto button:hover {
-    color: var(--cor-fundo);
-    background-color: var(--cor-principal);
-    box-shadow: 0 10px 20px 0 var(--cor-principal);
+    background: var(--cor-principal);
+    box-shadow: 0 10px 15px 0 var(--cor-principal);
+    scale: 1.1;
   }
   body.light-mode  section.home .texto button:hover {
     color: var(--cor-branco);
