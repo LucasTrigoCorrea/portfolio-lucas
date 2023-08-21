@@ -36,11 +36,10 @@ section.home {
     width: 420px;
     height: 420px;
     border-radius: 50%;
-    border: 15px solid var(--cor-principal);
+    border: 10px solid var(--cor-principal);
     border-top: 10px solid var(--cor-fundo);
     box-shadow: 0 2px 20px 2px var(--cor-principal);
     animation: animation-1 5s linear infinite;
-    z-index: 1;
   }
   body.light-mode  section.home .imagem .animation-1 {
     border-top: 10px solid var(--cor-branco);
@@ -93,7 +92,7 @@ section.home {
     font-family: var(--bold);
     font-size: 1.2rem;
     color: var(--cor-branco);
-    background: linear-gradient(90deg, var(--cor-principal), var(--cor-principal), var(--cor-secundaria));
+    background: var(--cor-principal);
     box-shadow: 0 1px 10px 1px var(--cor-principal);
     padding: 15px 30px;
     border-radius: 10px;

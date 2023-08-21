@@ -62,7 +62,7 @@ input[type=submit]{
     font-family: var(--bold);
     color: var(--cor-branco);
     display: block;
-    background: linear-gradient(90deg, var(--cor-principal), var(--cor-principal), var(--cor-secundaria));
+    background: var(--cor-principal);
     height: 35px;
     border: none;
     outline: 0;

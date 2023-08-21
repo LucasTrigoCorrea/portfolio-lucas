@@ -173,7 +173,6 @@ section.projects .myprojects h3::after {
     border: 1px solid var(--cor-branco);
     margin: 1rem 0 0 0;
     transition: all 0.3s;
-    letter-spacing: 1px;
 }
 .details span:hover {
     box-shadow: 2px 2px 15px 2px #ffffff6b;

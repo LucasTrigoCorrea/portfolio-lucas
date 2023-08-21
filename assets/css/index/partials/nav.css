@@ -42,7 +42,9 @@ nav {
     font-family: var(--bold);
     font-size: 1.5rem;
     letter-spacing: 5px;
-    color: var(--cor-principal);
+    background: -webkit-linear-gradient(0deg, var(--cor-principal),  var(--cor-secundaria));
+    -webkit-background-clip: text;
+    color: transparent;
   }
   /* Opcoes */
   nav .opcoes {
