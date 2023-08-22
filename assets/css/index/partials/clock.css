@@ -95,7 +95,7 @@ section.clkanalog .spike {
   font-size: 36px;
   font-weight: 900;
   position: absolute;
-  background: #000;
+  background: transparent;
   z-index: 10;
   right: calc(var(--clock-size)/ 4.5);
   top: 50%;
@@ -124,7 +124,7 @@ section.clkanalog a button.homepg {
     align-items: center;
     justify-content: center;
     padding: 5px 10px;
-    border-radius: 10px;
+    border: none;
     background: transparent;
     margin-top: 20px;
     margin-right: 30px;
