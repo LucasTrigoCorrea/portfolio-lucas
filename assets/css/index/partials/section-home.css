@@ -88,7 +88,7 @@ section.home {
     color: var(--cor-fundo);
   }
   
-  section.home .texto button {
+  section.home .texto a{
     font-family: var(--bold);
     font-size: 1.2rem;
     color: var(--cor-branco);
@@ -98,12 +98,12 @@ section.home {
     border-radius: 10px;
     transition: all 0.8s;
   }
-  section.home .texto button:hover {
+  section.home .texto a:hover {
     background: var(--cor-principal);
     box-shadow: 0 10px 15px 0 var(--cor-principal);
     scale: 1.1;
   }
-  body.light-mode  section.home .texto button:hover {
+  body.light-mode  section.home .texto a:hover {
     color: var(--cor-branco);
   }
   /* Responsivo */
