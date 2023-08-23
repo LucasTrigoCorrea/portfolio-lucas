@@ -1,101 +1,178 @@
-@import '../../../css/global/global.css';
+@import '../../global/fonts.css';
+@import '../../global/normalize.css';
 
-:root {
-  --primary-color:  #44148b;
-  --secundary-color: #4ccaff;
-}
-
-
-body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column ;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #44148b, #4ccaff, #eeeeee);
-  font-size: 1.3em;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  min-height: 300px;
-  background: rgba(55, 55, 55, 0.388);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  border-radius: 10px;
-  padding: 25px 60px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  font-family: var(--regular);
-}
-
-.container h1{
-  display: flex;
-  font-size: 4rem ;
-  font-family: var(--bold);
-  color: #1b1b1b;
-}
-
-button {
-  border-radius: 5px;
-  background: var(--secundary-color);
-  color: #1b1b1b;
-  font-size: 0.8rem;
-  height: 30px;
-  width: 80px;
-  cursor: pointer;
-  margin-top: 30px;
-  border: none;
-  font-family: var(--regular);
-}
-
-button:hover {
-  background: #94dcfbad;
-}
-.relogio {
-  font-size: 4em;
-  color: #1b1b1b;
-}
-
-.pausado {
-  color: rgba(253, 49, 49, 0.652);
-}
-a{
-  margin-top: 20px;
-  padding: 5px 15px;
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
-  font-family: var(--bold);
-  font-size: 1rem;
-  box-shadow: 0px 10px 15px #00000083;
-  transition: all 0.3s;
-}
-
-a:hover {
-  scale: 1.2;
-  background-color: var(--primary-color);
-  color: var(--cor-claro);
-}
-
-
-/* Responsivo */
-@media screen and (max-width: 1000px) {
-  body{
-        padding: 40px;
+:root{
+    /* Variáveis de Cores */
+    --cor-branco: #FFFFFF;
+    --cor-preto: #000000;
+    --cor-principal: #0f0;
+    --cor-fundo: #000;
+    --cor-fundo-2: #212020;
+    --cor-red: #fd0000;
+    --cor-blue: #00b3ff;
+  
+    /* Variáveis de Fontes */
+    --regular: 'mark-pro-regular';
+    --bold: 'mark-pro-bold';
   }
-  button {
-    width: 60px;
-  }
-  .container{
-      padding: 15px 30px;
-  }
-  .relogio {
-  font-size: 2.5em;
+
+
+
+section.clock {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
+section.clock .container{
+    background-color: var(--cor-fundo-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 2px 2px 20px 2px #ababab63;
+}
+section.clock .container h1 {
+    color: var(--cor-principal);
+    font-family: var(--bold);
+    font-size: 3rem;
+
+}
+section.clock .container .timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+}
+section.clock .container p.timer {
+    color: var(--cor-branco);
+    font-size: 3rem;
+    font-family: var(--regular);
+    margin: 20px;
+}
+section.clock .container p.timer.paused{
+    color: var(--cor-red);
+}
+section.clock .container button{
+    background-color: var(--cor-branco);
+    border-radius: 10px;
+    color: var(--cor-fundo-2);
+    padding: 10px 15px;
+    font-family: var(--regular);
+    font-size: 1.2rem;
+    margin: 5px;
+    transition: all 0.5s;
+
+}
+section.clock .container button.pause{
+    background-color: var(--cor-branco);
+    border-radius: 10px;
+    color: var(--cor-fundo-2);
+    padding: 10px 15px;
+    font-family: var(--regular);
+    font-size: 1.2rem;
+    margin: 5px;
+    transition: all 0.5s;
+
+}
+section.clock .container button.reset{
+    background-color: var(--cor-branco);
+    border-radius: 10px;
+    color: var(--cor-fundo-2);
+    padding: 10px 15px;
+    font-family: var(--regular);
+    font-size: 1.2rem;
+    margin: 5px;
+    transition: all 0.5s;
+
+}
+section.clock .container button:hover{
+    background-color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    box-shadow: 2px 2px 10px 2px var(--cor-principal);
+    scale: 1.1;
+}
+section.clock .container button.pause:hover{
+    background-color: var(--cor-red);
+    border: 1px solid var(--cor-red);
+    box-shadow: 2px 2px 10px 2px var(--cor-red);
+    scale: 1.1;
+}
+section.clock .container button.reset:hover{
+    background-color: var(--cor-blue);
+    border: 1px solid var(--cor-blue);
+    box-shadow: 2px 2px 10px 2px var(--cor-blue);
+    scale: 1.1;
+}
+
+section.clock a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    margin-top: 100px;
+}
+section.clock a:hover{
+    scale: 1.2;
+}
+
+
+
+/*RESPONSIVO*/
+@media screen and (max-width:600px){
+    section.clock .container{
+        padding: 20px 20px;
+    }
+    section.clock .container .timer{
+        padding: 10px;
+    }
+    section.clock .container p.timer {
+    color: var(--cor-branco);
+    font-size: 2rem;
+    font-family: var(--regular);
+    margin: 20px 10px;
+}
+    section.clock .container button{
+        background-color: var(--cor-branco);
+        border-radius: 10px;
+        color: var(--cor-fundo-2);
+        padding: 5px 10px;
+        font-family: var(--regular);
+        font-size: 1rem;
+        margin: 2px;
+        transition: all 0.5s;
+    
+    }
+    section.clock .container button.pause{
+        background-color: var(--cor-branco);
+        border-radius: 10px;
+        color: var(--cor-fundo-2);
+        padding: 5px 10px;
+        font-family: var(--regular);
+        font-size: 1rem;
+        margin: 2px;
+        transition: all 0.5s;
+    
+    }
+    section.clock .container button.reset{
+        background-color: var(--cor-branco);
+        border-radius: 10px;
+        color: var(--cor-fundo-2);
+        padding: 5px 10px;
+        font-family: var(--regular);
+        font-size: 1rem;
+        margin: 2px;
+        transition: all 0.5s;
+    
+    }
 }
