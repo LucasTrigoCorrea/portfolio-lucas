@@ -166,8 +166,9 @@ section.projects .myprojects h3::after {
 }
 .details span {
     font-size: 0.8rem;
-    font-family: var(--regular);
-    color: var(--cor-branco);
+    font-family: var(--bold);
+    color: var(--cor-fundo);
+    background-color: var(--cor-branco);
     border-radius: 10px;
     padding: 5px 10px;
     border: 1px solid var(--cor-branco);
@@ -180,7 +181,7 @@ section.projects .myprojects h3::after {
 }
 
 .details .desc {
-    color: var(--cor-branco);
+    color: var(--cor-branco);   
     opacity: .8;
     line-height: 1.5;
     margin-bottom: 1rem;

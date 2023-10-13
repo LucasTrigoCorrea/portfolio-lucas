@@ -1,0 +1,9 @@
+@import '../global/global.css';
+
+@import './section_home.css';
+@import './section_text.css';
+@import './section_media.css';
+@import './section_button.css';
+@import './section_benefits.css';
+@import './footer.css';
+@import './back-to-top.css';

@@ -1,0 +1,52 @@
+section.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-image: url(../../../../../../../files/images/images-lp-travel/images/bg-travel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.button a {
+    color: var(--cor-branco);
+    font-family: var(--bold);
+    font-size: 2rem;
+    padding: 15px 10px;
+    background-color: var(--cor-fundo-2);
+    border-radius: 15px;
+    box-shadow: 2px 5px 5px 5px var(--cor-fundo);
+    transition: all 0.5s;
+    animation: animation-1 1s linear infinite;
+}
+
+section.button a:hover {
+    scale: 1.1;
+}
+
+  /* Animations */
+  @keyframes animation-1 {
+    0% {
+      transform: scale(1.0);
+    }
+    50%{
+      transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+      }
+  }
+
+
+  /*RESPONSIVE*/
+
+  @media screen and (max-width: 1000px) {
+    section.button{
+      padding: 100px 20px;
+  }
+    section.button a {
+      font-size: 1.5rem;
+      padding: 15px 10px;
+  }
+  }

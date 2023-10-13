@@ -1,0 +1,29 @@
+.back-to-top {
+
+    cursor: pointer;   
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem; 
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+    color: var(--cor-branco);
+    z-index: 10;
+   }
+   .back-to-top img {
+    width: 100%;
+    max-width: 35px;
+    max-height: 35px;
+    transition: all 0.3s;
+    border-radius: 50%;
+    background-color: var(--cor-branco);
+    padding: 7px;
+   }
+   
+   .back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+   }

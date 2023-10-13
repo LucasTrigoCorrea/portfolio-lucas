@@ -1,0 +1,102 @@
+/* <section class="benefits"> */
+section.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--cor-fundo-3);
+  }
+  /* title */
+  section.benefits .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 100px;
+  }
+  section.benefits .title h2 {
+    font-family: var(--bold);
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--cor-branco);
+  }
+  section.benefits .title h2 span {
+    color: var(--cor-principal);
+  }
+  section.benefits .title p {
+    font-family: var(--regular);
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    padding: 20px 000;
+    width: 100%;
+    line-height: 1.5;
+  }
+  /* Itens */
+  section.benefits .itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--cor-fundo-2);
+  }
+
+  section.benefits .itens .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 50%;
+    height: 100%;
+    min-height: 200px;
+    padding: 20px;
+  }
+  section.benefits .itens .item.diferente {
+    background-color: var(--cor-fundo-3);
+  }
+  section.benefits .itens .item h3 {
+    font-family: var(--bold);
+    font-size: 3rem;
+    color: var(--cor-principal);
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  section.benefits .itens .item.diferente h3 {
+    color: var(--cor-branco);
+  }
+  section.benefits .itens .item p {
+    font-family: var(--regular);
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    line-height: 1.5;
+    text-align: center;
+  }
+  /* Responsive */
+  @media screen and (max-width: 1000px) {
+    section.benefits {
+      flex-direction: column;
+    }
+    section.benefits .title {
+      width: 100%;
+    }
+    section.benefits .title {
+      padding: 40px 30px;
+    }
+    section.benefits .title h2 {
+      font-size: 2rem;
+      max-width: 400px;
+    }
+    section.benefits .title p {
+      max-width: 350px;
+    }
+    section.benefits .itens .item h3 {
+      font-size: 1.5rem;
+    }
+    section.benefits .itens .item p {
+      font-size: 0.7rem;
+      max-width: 160px;
+    }
+  }
+  

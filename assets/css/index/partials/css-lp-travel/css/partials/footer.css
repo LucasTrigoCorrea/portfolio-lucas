@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+footer p {
+    color: var(--cor-branco);
+    font-family: var(--bold);
+    font-size: 1.2rem;
+}
+
+footer span {
+    color: var(--cor-branco);
+    font-family: var(--regular);
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+  /*RESPONSIVE*/
+
+  @media screen and (max-width: 1000px) {
+    footer {
+        padding: 40px 20px;
+    }
+  }
